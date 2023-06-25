@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    environment {
+    /*environment {
     PATH = "C:\\WINDOWS\\SYSTEM32"
-    } 
+    } */
     tools {
         
         maven "Maven"
