@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-    PATH = "C:\\WINDOWS\\SYSTEM32"
+    PATH = "C:\\WINDOWS\\SYSTEM32;C:\\Program Files\\Docker\\Docker\\resources\\bin"
     DOCKERHUB_CREDENTIALS=credentials('DOCKERHUB_CREDENTIALS')
     } 
     tools {
