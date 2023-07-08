@@ -1,16 +1,17 @@
 pipeline {
     agent any
-    /*environment {
+    environment {
     PATH = "C:\\WINDOWS\\SYSTEM32"
-    } */
+    DOCKERHUB_CREDENTIALS=credentials('DOCKERHUB_CREDENTIALS')
+    } 
     tools {
         
         maven "Maven"
         jdk "OpenJDK17"
     }
-     environment {
+     /*environment {
     DOCKERHUB_CREDENTIALS=credentials('DOCKERHUB_CREDENTIALS')
-    } 
+    } */
     stages {
         stage('Maven package') {
             steps {
